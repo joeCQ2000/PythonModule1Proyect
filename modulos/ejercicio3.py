@@ -1,11 +1,9 @@
 import streamlit as st
 import numpy as np
 
-import streamlit as st
-
 def calcular_retorno(actividad: dict, tasa: float, meses: int) -> float:
-    # Retorno = presupuesto × tasa × meses
-    return float(actividad["presupuesto"]) * float(tasa) * int(meses)
+    presupuesto = np.float64(actividad["presupuesto"])
+    return float(presupuesto * np.float64(tasa) * np.int64(meses))
 
 def page_ej3():
     st.title("Ejercicio 3 – Funciones y Programación Funcional")

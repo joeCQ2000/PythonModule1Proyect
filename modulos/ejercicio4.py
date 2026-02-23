@@ -1,6 +1,4 @@
 import streamlit as st
-import numpy as np
-
 class Actividad:
     def __init__(self, nombre: str, tipo: str, presupuesto: float, gasto_real: float):
         self.nombre = nombre
